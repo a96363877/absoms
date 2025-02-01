@@ -245,8 +245,7 @@ export default function NotificationsPage() {
                   <td className="px-4 py-3">
                     خطوه - {notification.currentPage}
                   </td>
-                      <td className="px-4 py-3">{new Date(notification.createdDate!).toLocaleString("ar-SA")} (
-                      {formatDistanceToNow(new Date(notification.createdDate!), { addSuffix: true, locale: ar })})</td>
+                      <td className="px-4 py-3">{new Date(notification.createdDate!).toLocaleString("ar-SA")}</td>
                   <td className="px-4 py-3 text-center">
                     <Badge variant="default" className="bg-green-500">
                       {parseInt(notification!.notificationCount!.toString()!) +
